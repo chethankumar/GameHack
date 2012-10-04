@@ -1,0 +1,102 @@
+/*CSS for RoundAbout carousel*/
+.roundabout-holder {
+	padding: 0;
+	margin: 0 auto;
+	height: 200px;
+	width: 450px;
+}
+
+.roundabout-moveable-item {
+	height: 200px;
+	width: 200px;
+	cursor: pointer;
+	display:block;
+}
+
+.roundabout-moveable-item img {
+	height: 100%;
+	width: 100%;
+}
+
+.roundabout-in-focus {
+	cursor: auto;
+}
+
+#carousel-descriptions {
+	list-style:none;
+	display:block;
+	width:100%;
+	margin:25px auto;
+	padding:0;
+}
+
+#carousel-descriptions li {
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	display:none;
+}
+
+#carousel-descriptions li.current {
+	display:block;
+}
+
+/*CSS: Attributes for Cars and Tracks*/
+.attributes-as-bar {
+	background-color: black;
+	border-radius: 10px;
+	height: 40px;
+	width: 150px;
+	margin-bottom: 2px;
+}
+.attributes-as-bar span {
+	color: rgba(14, 243, 161, 0.5);
+	font-size: 15px;
+	font-weight: lighter;
+	position: absolute;
+	padding-top: 2px;
+	left: 25px;
+}
+.progress-bar-wrapper{
+	padding-bottom: 5px;
+	padding-left: 7px;
+	padding-top: 21px;
+}
+.position-second{
+	position: relative;
+	top: -42px;
+	left: 35%;
+}
+.position-third{
+	position: relative;
+	top: -84px;
+	left: 69%;
+}
+.position-second span, .position-third span{
+	left: 10px;
+}
+
+/*CSS: Backdrop flag*/
+.backdrop-flag {
+	background-image: url('images/flag.gif');
+	opacity: 0.2;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/*Custom Button Icons*/
+.ui-icon-myapp-selection-ok {
+		background-image: url("images/ok-button.png");
+		background-size: 50px 50px;
+	}
+.button-selection-ok {
+	background-image: url('images/ok-button.png');
+	width: 80px;
+	height: 50px;
+	background-size: 120px 100px;
+	background-position-x: -22px;
+	background-position-y: -17px;
+}

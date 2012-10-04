@@ -1,0 +1,249 @@
+<!DOCTYPE html>		
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+		<title>GameHack</title>
+		<link rel="shortcut icon" href="images/favicon.png" />
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+		<link rel="stylesheet" href="css/GameHack.css" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.1.0.css" />
+		<link rel="stylesheet" href="css/progress-bar.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+	</head>
+	<body id="content" style="display: block">
+		GameHack
+		<!-- application UI goes here -->
+		<!-- Start of first/user-selection page -->
+		<div data-role="page" id="user-selection-page">
+			<div class="backdrop-flag"></div>
+			<div style="position:relative">
+				<div data-role="header">
+					<h1>Select User</h1>
+				</div>
+				<div data-role="content">
+					<a data-role="button" data-theme="a" href="#page1">
+			            New User
+			        </a>
+			        <div data-role="fieldcontain">
+			            <label for="selectmenu1">
+			                Choose:
+			            </label>
+			            <select name="" data-theme="b">
+			                <option value="option1">
+			                    Option 1
+			                </option>
+			            </select>
+			        </div>
+			        <a data-role="button" data-theme="e" href="#page1">
+			            Button
+			        </a>
+			        <input id="selectOK" type="image" src="css/images/ok-button.png" style="width:120px; " value="Input type=image" data-role="none" />
+					<a href="#car-selection-page" data-role="button" data-icon="myapp-selection-ok" data-theme="a" data-inline="true">OK</a>
+				</div>
+				<div data-role="footer">
+				</div>
+			</div>
+		</div>
+		<!-- Start of car selection page -->
+		<div data-role="page" id="car-selection-page">
+			<div class="backdrop-flag"></div>
+			<div style="position: relative">
+				<div data-role="header">
+			        <a href="#user-selection-page" data-role="button" data-icon="back" style="left:5%" data-theme="b" data-iconpos="notext" data-inline="true">Go Back</a>
+			        <h1>Select Car</h1>
+					<a href="#track-selection-page" data-role="button" data-icon="check" style="left:90%" data-theme="b" data-iconpos="notext" data-inline="true">OK</a>
+			    </div>
+				<div data-role="content">	
+					<div id="carousel">
+						<img src="images/aston_martin.png" alt="" class="slide" />
+						<img src="images/chrysler.png" alt="" class="slide" />
+						<img src="images/dodge.png" alt="" class="slide" />
+						<img src="images/ferrari.png" alt="" class="slide" />
+						<img src="images/hyundai_coupe.png" alt="" class="slide" />
+					</div>
+					
+					<ul id="carousel-descriptions" style="height: 80px;">
+						<li class="desc current">Aston Martin<br>
+							<div>
+								<div class="attributes-as-bar">
+									<span>SPEED</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg speed" style="width:60%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-second">
+									<span>ACCELERATION</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg acceleration" style="width:80%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-third">
+									<span>HANDLING</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg handling" style="width:60%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desc">Chrysler
+							<div>
+								<div class="attributes-as-bar">
+									<span>SPEED</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg speed" style="width:40%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-second">
+									<span>ACCELERATION</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg acceleration" style="width:20%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-third">
+									<span>HANDLING</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg handling" style="width:70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desc">Dodge
+							<div>
+								<div class="attributes-as-bar">
+									<span>SPEED</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg speed" style="width:50%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-second">
+									<span>ACCELERATION</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg acceleration" style="width:90%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-third">
+									<span>HANDLING</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg handling" style="width:20%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desc">Ferrari
+							<div>
+								<div class="attributes-as-bar">
+									<span>SPEED</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg speed" style="width:90%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-second">
+									<span>ACCELERATION</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg acceleration" style="width:80%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-third">
+									<span>HANDLING</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg handling" style="width:40%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desc">Hyundai Coupe
+							<div>
+								<div class="attributes-as-bar">
+									<span>SPEED</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg speed" style="width:40%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-second">
+									<span>ACCELERATION</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg acceleration" style="width:30%"></div>
+										</div>
+									</div>
+								</div>
+								<div class="attributes-as-bar position-third">
+									<span>HANDLING</span>
+									<div class="progress-bar-wrapper">
+										<div data-role='progress-bar' class="ui-progress-bar" indeterminate='false' id="progressBar1">
+											<div class="ui-progress-bg handling" style="width:90%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<input id="back" type="image" src="images/back-button.png" style="width:80px;position: relative;left:18%" value="" data-role="none" />
+					<input id="car-selection-ok" type="image" src="images/ok-button.png" style="width:80px;position: relative;left:50%" value="" data-role="none" />
+				</div>
+			</div>
+		</div>
+		<!-- Start of track selection page -->
+		<div data-role="page" id="track-selection-page">
+			<div class="backdrop-flag"></div>
+			<div data-role="header">
+				<h1>Trace Selection</h1>
+			</div>
+			<div data-role="content">
+				<a href="#car-selection-page" data-role="button" data-icon="back" data-theme="a" data-inline="true">Go Back</a>
+				<a href="#" data-role="button" style="left:52%" data-theme="a" data-inline="true">OK</a>	
+			</div>
+			<div data-role="footer">
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.7.2.js"></script>
+		<script src="js/jquery.mobile-1.1.0.js"></script>
+		<script type="text/javascript" src="js/jquery.event.drag-2.2.js"></script>
+		<script type="text/javascript" src="js/jquery.event.drop-2.2.js"></script>
+		<script type="text/javascript" src="js/jquery.roundabout.min.js"></script>
+		<script type="text/javascript">
+		(function($) {
+		var $descriptions = $('#carousel-descriptions').children('li'),
+			$carousel = $('#carousel')
+				.roundabout({childSelector:"img", minOpacity:0.2, maxOpacity:1.0, autoplay:false, enableDrag: true })
+				.on('focus', 'img', function() {
+					var slideNum = $carousel.roundabout("getChildInFocus");
+					
+					$descriptions.removeClass('current');
+					$($descriptions.get(slideNum)).addClass('current');
+				});
+		}(jQuery));
+		</script>
+		<script src="js/initOptions.js"></script>
+		<script src="js/GameHack.js"></script>
+		<script src="js/messages.js"></script>
+	</body>
+</html>
